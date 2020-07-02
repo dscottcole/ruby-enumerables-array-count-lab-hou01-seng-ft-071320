@@ -5,10 +5,9 @@ def count_strings(array)
   
   string_count = 0
   array.count do |i|
-    if array[i].class == String
+    array[i].class == String
       string_count += 1
     end
-  end
   string_count
 end
 

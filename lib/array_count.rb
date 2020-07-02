@@ -7,7 +7,6 @@ def count_strings(array)
   while i < array.count do
     if array[i].class == String
       string_count += 1
-      binding.pry
     end
     i += 1
   end

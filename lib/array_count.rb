@@ -15,6 +15,13 @@ end
 
 def count_empty_strings(array)
   # Return the total number of EMPTY strings in the provided array using the count enumerable
-  
-  
+ i = 0
+  empty_string_count = 0
+  while i < array.count do
+    if array[i].class == String && array[i] == " "
+      empty_string_count += 1
+    end
+    i += 1
+  end
+  empty_string_count
 end
